@@ -1,0 +1,106 @@
+*   {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container   {
+    display: grid;
+    grid-template-columns: 0.3fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+    "header header"
+    "content content"
+    "content content"
+    "content content"
+    "content content"
+    "content content"
+    "content content";
+}
+.header {
+    grid-area: header;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background: #333333;
+    width: 100%;
+    height: 55px;
+    overflow-x: hidden;
+    padding-top: 15px;
+    z-index: 5;
+}
+.navigation> a  {
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    text-decoration: none;
+    font-size: x-large;
+    padding-left: 15px;
+    opacity: 0.5;
+}
+.navigation> p  {
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    text-decoration: none;
+    font-size: x-large;
+    padding-left: 15px;
+}
+.navigation> a:hover    {
+    opacity: 1;
+    transition: 0.1s;
+    padding-top: 3px;
+}
+.banner    {
+    grid-area: content;
+    width: 100%;
+    height: 100%;
+    background-image: url("back.png");
+    background-size: cover;
+    padding: 15%
+}
+.content    {
+    grid-area: content;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: url("back.png");
+    background-size: cover;
+}
+.wbox   {
+    background-image: url("color.png");
+    width: 100%;
+    height: 150px;
+}
+.text   {
+    font-size: x-large;
+    font-family: 'Comfortaa', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.line   {
+    text-align: center;
+    color: white;
+}
+.pbox   {
+    margin: auto;
+    background-image: url("color.png");
+    width: 75%;
+    height: 150%;
+}
+.text-1   {
+    font-size: xx-large;
+    font-family: 'Comfortaa', sans-serif;
+    color: white;
+    padding: 25px;
+}
+.texts  {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: 'Comfortaa', sans-serif;
+    padding-left: 25px;
+    opacity: 0.75;
+}
